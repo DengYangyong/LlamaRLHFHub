@@ -1,0 +1,17 @@
+debug: true
+use_random_seed: false
+seed: 461
+
+corpus_file: data/pretrain/CLUECorpusSmall.txt
+sampled_corpus_file: data/pretrain/CLUECorpusSmallSampled.txt
+model_prefix: output/vocab/chinese_sp/chinese_bpe
+pad_id: 3
+vocab_size: 20000
+max_sentence_length: 16384
+model_type: BPE
+byte_fallback: True
+
+model_name_or_path: NousResearch/Llama-2-7b-hf
+output_sp_dir: output/vocab/chinese_sp/merged_tokenizer_sp
+output_hf_dir: output/vocab/chinese_sp/merged_tokenizer_hf
+baichuan_vocab_file: data/vocab/baichuan_vocab.txt
